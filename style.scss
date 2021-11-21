@@ -315,7 +315,7 @@ input {
 
 @include ms {
 
-    //A PARTIR DE TAILLE TABLETTE  max-width:767px
+    //DEBUT MAX 767 medium small tablets and large smartphones (landscape view)
     .nav__menu {
         position: fixed;
         background-color: var(--body-color);
@@ -327,6 +327,8 @@ input {
         padding: 3rem;
         transition: .4s;
     }
+    //FIN MAX 767 medium small tablets and large smartphones (landscape view)
+
 }
 
 .nav__list {
@@ -959,8 +961,15 @@ input {
 
 
 
-//================= DEBUT MEDIA QUERIES ============================================ //
-//FOR SMALL DEVICES taille s : max 375px
+
+
+
+
+
+
+//================= DEBUT MEDIA QUERIES ================================================================ //
+
+//--DEBUT MAX 350px smartphones (landscape view)------------------------------------//
 @include s {
     .place__container {
         grid-template-columns: max-content;
@@ -985,8 +994,14 @@ input {
 
     }
 }
+//--FIN MAX 350px smartphones (landscape view)------------------------------------//
 
-//FOR MEDIUM DEVICES pour les tailles moyenne MOINS minimum 568px
+
+
+
+
+
+// DEBUT MIN 568px small tablets and large smartphones (landscape view)
 @include sm {
     .video__container {
         display: grid;
@@ -1004,9 +1019,15 @@ input {
 
     }
 }
+// FIN MIN 568px small tablets and large smartphones (landscape view)
 
 
-//FOR DEVICES de taille MOYENNE + md : pour les grandes tailles minimum 768px
+
+
+
+
+
+// DEBUT MIN 768 small tablets and large smartphones (landscape view)
 @include md {
     body {
         margin: 0;
@@ -1155,11 +1176,12 @@ input {
         justify-content: space-between;
     }
 }
+// FIN MIN 768 small tablets and large smartphones (landscape view)
 
 
 
 
-//FOR DEVICES de taille GRANDE xl : pour les grandes tailles > 1024px
+// DEBUT MIN 1024 extra Large tablets and desktops
 @include xl {
     .container {
         margin-left: auto;
@@ -1247,18 +1269,25 @@ input {
     }
 
 }
+// FIN MIN 1024 extra Large tablets and desktops
 
 
-//FOR DEVICES de taille TRES GRANDE xxl : pour les grandes tailles > 1200px
+
+
+
+
+// DEBUT MIN 1024 extra extra Large desktops
 @include xxl {
     .container {
         min-width: 1024px;
     }
 }
+// FIN MIN 1024 extra extra Large desktops
 
 
 
-//FOR TALL SCREENS ON MOBILES AND DESKTOP
+
+//DEBUT MIN HEIGHT 721 for tall screens on mobiles and desktop 
 @media screen and (min-height:721px) {
     body {
         margin: 0;
@@ -1269,7 +1298,7 @@ input {
         height: 640px;
     }
 }
-
+//DEBUT MIN HEIGHT 721 for tall screens on mobiles and desktop 
 
 
 //================= FIN MEDIA QUERIES ============================================ //
